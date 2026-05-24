@@ -1,151 +1,114 @@
-# Azure Cybersecurity Lakehouse Platform
+---
 
-Enterprise-scale cybersecurity lakehouse platform built using Microsoft Azure services for secure data ingestion, scalable transformation, analytical processing, and threat intelligence reporting.
+# Enterprise Engineering Implementation
 
-This project demonstrates modern cloud data engineering practices using a layered lakehouse architecture designed for handling cybersecurity event data, security logs, and operational monitoring datasets.
+The project was designed using enterprise-scale cloud data engineering principles focused on scalability, modularity, automation, monitoring, and secure data processing.
+
+## Metadata-Driven Pipeline Design
+
+The platform uses metadata-driven orchestration through control tables to dynamically manage ingestion and transformation workflows.
+
+### Control Table Capabilities
+
+- Source system configuration management
+- Dynamic file ingestion handling
+- Pipeline parameterization
+- Incremental load tracking
+- Watermark-based processing
+- Table-level execution control
+- Environment-driven execution logic
+
+Control tables are used to reduce hardcoded pipeline logic and improve scalability for onboarding new datasets.
 
 ---
 
-# Project Objective
+# Incremental Processing Framework
 
-The objective of this project is to demonstrate practical implementation of enterprise-grade cloud data engineering solutions using Azure services and modern lakehouse architecture principles within a cybersecurity analytics domain.
+The platform implements incremental data loading patterns to optimize processing efficiency and reduce unnecessary data movement.
 
-The platform focuses on scalable data ingestion, incremental processing, layered transformations, and analytical reporting workflows commonly used in modern cloud-based security operations environments.
+## Incremental Load Features
 
----
-
-# Tech Stack
-
-- Azure Synapse Analytics
-- Azure Data Factory (ADF)
-- Azure Data Lake Storage Gen2 (ADLS Gen2)
-- Delta Lake
-- Power BI
+- Watermark column tracking
+- Timestamp-based ingestion
+- Delta-based processing logic
+- Incremental file detection
+- Historical data preservation
+- Idempotent pipeline execution
 
 ---
 
-# Project Architecture
+# Error Handling & Monitoring
 
-The platform follows a Medallion/Lakehouse architecture pattern consisting of Bronze, Silver, and Gold layers for structured data processing and analytical reporting.
+Enterprise-grade monitoring and exception handling mechanisms are implemented across ingestion and transformation workflows.
 
-## Bronze Layer
+## Error Handling Features
 
-- Raw cybersecurity log data ingestion
-- Immutable storage pattern
-- Source-aligned schema preservation
-- ADLS Gen2 raw zone storage
-
-## Silver Layer
-
-- Data cleansing and normalization
-- Schema standardization
-- Null handling and deduplication
-- Incremental transformation logic
-- Data quality validation
-
-## Gold Layer
-
-- Business-ready analytical datasets
-- Aggregated threat intelligence metrics
-- Reporting-optimized dimensional structures
-- KPI and dashboard serving layer
+- Pipeline failure tracking
+- Conditional activity handling
+- Retry logic implementation
+- Logging and execution monitoring
+- Activity dependency validation
+- Dynamic failure notifications
+- Audit-based pipeline tracking
 
 ---
 
-# Data Engineering Workflow
+# Security & Secret Management
 
-## Data Ingestion
+Azure Key Vault integration is used for secure credential and secret management across Azure services.
 
-Azure Data Factory pipelines are used for:
+## Azure Key Vault Integration
 
-- Incremental data ingestion
-- Orchestration and scheduling
-- Metadata-driven processing
-- Parameterized pipeline execution
-- Error handling and monitoring
-
-## Data Storage
-
-Azure Data Lake Storage Gen2 is used as the centralized storage layer for:
-
-- Raw ingestion data
-- Curated datasets
-- Analytical reporting tables
-- Partitioned Delta Lake storage
-
-## Data Processing
-
-Azure Synapse Analytics is used for:
-
-- Data transformation
-- SQL-based analytical processing
-- Data enrichment
-- Aggregation workloads
-- Layer-to-layer processing
+- Secure storage of connection secrets
+- Managed credential access
+- Elimination of hardcoded secrets
+- Secure linked service authentication
+- Centralized secret governance
 
 ---
 
-# Key Engineering Features
+# Data Lake Design
 
-- End-to-end ETL/ELT pipeline implementation
-- Lakehouse architecture design
-- Incremental data processing
-- Delta Lake integration
-- Enterprise-style folder organization
-- Modular pipeline development
-- Scalable cloud-native architecture
-- Reporting optimization workflows
+Azure Data Lake Storage Gen2 is structured using enterprise lakehouse design principles.
 
----
+## Storage Layer Organization
 
-# Data Sources
+- Bronze Layer (Raw Data)
+- Silver Layer (Curated Data)
+- Gold Layer (Business Analytics)
 
-The project uses simulated and structured cybersecurity datasets representing enterprise security operations and threat monitoring environments.
+## Storage Features
 
-## Source Data Includes
-
-- Authentication and login activity logs
-- Failed login event records
-- User access monitoring datasets
-- Threat severity event data
-- Security alert records
-- Operational monitoring logs
-
-## Data Characteristics
-
-- Structured CSV-based ingestion
-- Incremental load processing
-- Timestamp-based event tracking
-- Multi-source analytical datasets
-- Reporting-oriented transformations
+- Delta Lake implementation
+- Partition-based storage optimization
+- Structured folder hierarchy
+- Scalable cloud-native storage architecture
 
 ---
 
-# Cybersecurity Analytics Use Cases
+# Pipeline Orchestration
 
-The platform supports analytical reporting for:
+Azure Data Factory pipelines are used for centralized orchestration and workflow automation.
 
-- Threat severity monitoring
-- Failed authentication tracking
-- User risk analysis
-- Security event trend analysis
-- Suspicious activity monitoring
-- Operational security KPIs
+## Pipeline Features
 
----
-
-# Reporting Layer
-
-Power BI dashboards are designed for:
-
-- Executive security reporting
-- Threat intelligence visualization
-- KPI monitoring
-- Trend analysis
-- Operational analytics
+- Metadata-driven execution
+- Dynamic dataset parameterization
+- Trigger-based scheduling
+- Incremental ingestion orchestration
+- Dependency-based execution flow
+- Enterprise ETL workflow management
 
 ---
 
-# Pipeline Flow
+# Analytical Reporting
 
-Source Systems → Azure Data Factory → ADLS Bronze Layer → Synapse Transformations → Silver Layer → Gold Layer → Power BI Reporting
+Power BI dashboards are developed using curated Gold layer datasets for business and operational reporting.
+
+## Dashboard Capabilities
+
+- Threat severity analysis
+- Security KPI reporting
+- Failed login trend analysis
+- Operational monitoring dashboards
+- Interactive analytical visualizations
