@@ -6,6 +6,14 @@ This project demonstrates modern cloud data engineering practices using a layere
 
 ---
 
+# Project Objective
+
+The objective of this project is to demonstrate practical implementation of enterprise-grade cloud data engineering solutions using Azure services and modern lakehouse architecture principles within a cybersecurity analytics domain.
+
+The platform focuses on scalable data ingestion, incremental processing, layered transformations, and analytical reporting workflows commonly used in modern cloud-based security operations environments.
+
+---
+
 # Tech Stack
 
 - Azure Synapse Analytics
@@ -90,6 +98,29 @@ Azure Synapse Analytics is used for:
 
 ---
 
+# Data Sources
+
+The project uses simulated and structured cybersecurity datasets representing enterprise security operations and threat monitoring environments.
+
+## Source Data Includes
+
+- Authentication and login activity logs
+- Failed login event records
+- User access monitoring datasets
+- Threat severity event data
+- Security alert records
+- Operational monitoring logs
+
+## Data Characteristics
+
+- Structured CSV-based ingestion
+- Incremental load processing
+- Timestamp-based event tracking
+- Multi-source analytical datasets
+- Reporting-oriented transformations
+
+---
+
 # Cybersecurity Analytics Use Cases
 
 The platform supports analytical reporting for:
@@ -115,6 +146,6 @@ Power BI dashboards are designed for:
 
 ---
 
-# Project Objective
+# Pipeline Flow
 
-The objective of this project is to demonstrate practical implementation of enterprise-grade cloud data engineering solutions using Azure services and modern lakehouse principles within a cybersecurity analytics domain.
+Source Systems → Azure Data Factory → ADLS Bronze Layer → Synapse Transformations → Silver Layer → Gold Layer → Power BI Reporting
