@@ -246,12 +246,12 @@ The project demonstrates implementation of modern enterprise cloud data engineer
 
 ---
 
-# End-to-End Pipeline Flow
+# End-to-End Data Pipeline Flow
 
-Source Systems  
-→ Azure Data Factory Ingestion Pipelines  
-→ ADLS Gen2 Bronze Layer  
-→ Synapse Transformations  
-→ Silver Layer Processing  
-→ Gold Layer Aggregations  
-→ Power BI Reporting & Analytics
+- Cybersecurity Source Systems
+- Azure Data Factory (ADF) Ingestion & Orchestration
+- Azure Data Lake Storage Gen2 Bronze Layer (Raw Data)
+- Synapse Transformation & Cleansing Workflows
+- Silver Layer Curated Processing
+- Gold Layer Business & Analytical Aggregations
+- Power BI Reporting, KPI Monitoring & Threat Intelligence Analytics
