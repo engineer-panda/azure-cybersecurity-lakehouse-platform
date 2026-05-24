@@ -1,63 +1,120 @@
 # Azure Cybersecurity Lakehouse Platform
 
-An end-to-end modern cybersecurity data engineering project built on Microsoft Azure for scalable threat ingestion, transformation, analytics, and reporting.
+Enterprise-scale cybersecurity lakehouse platform built using Microsoft Azure services for secure data ingestion, scalable transformation, analytical processing, and threat intelligence reporting.
 
-This project demonstrates how enterprise cybersecurity logs and threat intelligence data can be processed through a lakehouse architecture using Azure cloud technologies.
+This project demonstrates modern cloud data engineering practices using a layered lakehouse architecture designed for handling cybersecurity event data, security logs, and operational monitoring datasets.
 
-## Technologies Used
+---
+
+# Tech Stack
 
 - Azure Synapse Analytics
-- Azure Data Factory
-- Azure Data Lake Storage Gen2
+- Azure Data Factory (ADF)
+- Azure Data Lake Storage Gen2 (ADLS Gen2)
 - Delta Lake
 - Power BI
 
-## Project Overview
+---
 
-The platform is designed to simulate a real-world cybersecurity analytics environment where security events and threat logs are ingested from multiple source systems and processed through a layered lakehouse architecture.
+# Project Architecture
 
-The solution includes:
+The platform follows a Medallion/Lakehouse architecture pattern consisting of Bronze, Silver, and Gold layers for structured data processing and analytical reporting.
 
-- Data ingestion pipelines using Azure Data Factory
-- Bronze, Silver, and Gold data lake layers
-- Incremental data loading strategies
-- Data transformation and cleansing
-- Threat severity analysis
-- Security KPI reporting
-- Interactive Power BI dashboards
+## Bronze Layer
 
-## Architecture Layers
+- Raw cybersecurity log data ingestion
+- Immutable storage pattern
+- Source-aligned schema preservation
+- ADLS Gen2 raw zone storage
 
-### Bronze Layer
-Raw cybersecurity data is ingested and stored in Azure Data Lake Storage Gen2 without modification.
+## Silver Layer
 
-### Silver Layer
-Data is cleaned, standardized, validated, and transformed for analytical processing.
+- Data cleansing and normalization
+- Schema standardization
+- Null handling and deduplication
+- Incremental transformation logic
+- Data quality validation
 
-### Gold Layer
-Business-ready aggregated datasets are created for reporting and dashboard consumption.
+## Gold Layer
 
-## Key Features
+- Business-ready analytical datasets
+- Aggregated threat intelligence metrics
+- Reporting-optimized dimensional structures
+- KPI and dashboard serving layer
 
-- End-to-end ETL/ELT pipeline architecture
-- Incremental processing design
-- Scalable cloud-based storage
-- Lakehouse implementation using Delta Lake
-- Cybersecurity threat analytics
-- Reporting and visualization using Power BI
-- Enterprise-style project structure
+---
 
-## Reporting & Analytics
+# Data Engineering Workflow
 
-Power BI dashboards provide insights into:
+## Data Ingestion
 
-- Threat severity distribution
-- Failed login attempts
-- Suspicious user activity
-- Security event trends
-- Risk categorization
-- Operational KPIs
+Azure Data Factory pipelines are used for:
 
-## Project Goal
+- Incremental data ingestion
+- Orchestration and scheduling
+- Metadata-driven processing
+- Parameterized pipeline execution
+- Error handling and monitoring
 
-The objective of this project is to demonstrate practical cloud data engineering skills by building a production-style cybersecurity analytics platform using Azure services and modern lakehouse architecture principles.
+## Data Storage
+
+Azure Data Lake Storage Gen2 is used as the centralized storage layer for:
+
+- Raw ingestion data
+- Curated datasets
+- Analytical reporting tables
+- Partitioned Delta Lake storage
+
+## Data Processing
+
+Azure Synapse Analytics is used for:
+
+- Data transformation
+- SQL-based analytical processing
+- Data enrichment
+- Aggregation workloads
+- Layer-to-layer processing
+
+---
+
+# Key Engineering Features
+
+- End-to-end ETL/ELT pipeline implementation
+- Lakehouse architecture design
+- Incremental data processing
+- Delta Lake integration
+- Enterprise-style folder organization
+- Modular pipeline development
+- Scalable cloud-native architecture
+- Reporting optimization workflows
+
+---
+
+# Cybersecurity Analytics Use Cases
+
+The platform supports analytical reporting for:
+
+- Threat severity monitoring
+- Failed authentication tracking
+- User risk analysis
+- Security event trend analysis
+- Suspicious activity monitoring
+- Operational security KPIs
+
+---
+
+# Reporting Layer
+
+Power BI dashboards are designed for:
+
+- Executive security reporting
+- Threat intelligence visualization
+- KPI monitoring
+- Trend analysis
+- Operational analytics
+
+---
+
+# Project Objective
+
+The objective of this project is to demonstrate practical implementation of enterprise-grade cloud data engineering solutions using Azure services and modern lakehouse principles within a cybersecurity analytics domain.
