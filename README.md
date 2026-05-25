@@ -7,7 +7,12 @@ The project was designed using enterprise-scale cloud data engineering principle
 The architecture simulates a production-style cybersecurity analytics platform capable of handling large-scale security event ingestion, transformation, orchestration, and analytical reporting workflows using Microsoft Azure services.
 
 ---
+# Azure Cybersecurity Threat Detection Pipeline
 
+## Project Demo Video
+YouTube Demo: https://youtube.com/yourlink](https://youtu.be/jlgpAMo3re8
+
+---
 # Metadata-Driven Pipeline Framework
 
 The platform follows a metadata-driven architecture pattern where ingestion and transformation logic is dynamically controlled through centralized configuration and control tables.
