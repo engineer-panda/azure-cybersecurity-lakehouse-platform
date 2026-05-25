@@ -4,17 +4,19 @@ Built an end-to-end Azure Cybersecurity Threat Detection Pipeline using Azure Da
 
 ---
 
-## Project Demo Video
+# 🎥 Project Demo Video
+
 YouTube Demo: https://youtu.be/jlgpAMo3re8
 
 ---
 
-## Architecture Diagram
+# 🏗️ Architecture Diagram
+
 ![Architecture](screenshots/architecture_001.png)
 
 ---
 
-## Technology Stack
+# ⚙️ Technology Stack
 
 - Azure Data Factory (ADF)
 - Azure Synapse Analytics
@@ -26,20 +28,20 @@ YouTube Demo: https://youtu.be/jlgpAMo3re8
 
 ---
 
-# Key Features
+# 🚀 Key Features
 
 - Metadata-driven pipeline framework
-- Incremental watermark processing
+- Incremental watermark-based ingestion
 - Bronze, Silver, and Gold lakehouse architecture
-- Dynamic orchestration pipelines
-- Centralized monitoring and logging
-- Azure Key Vault secret management
-- Scalable cybersecurity log processing
-- Automated workflow execution
+- Synapse transformation and analytical workflows
+- Secure credential management using Azure Key Vault
+- Centralized monitoring and audit logging
+- Dynamic orchestration and parameterized pipelines
+- Cybersecurity log analytics processing
 
 ---
 
-# Data Pipeline Flow
+# 🔄 End-to-End Pipeline Flow
 
 1. Cybersecurity source systems ingestion  
 2. Azure Data Factory orchestration workflows  
@@ -51,9 +53,9 @@ YouTube Demo: https://youtu.be/jlgpAMo3re8
 
 ---
 
-# Screenshots
+# 📸 Project Screenshots
 
-## Azure Resource Group
+## Azure Resource Group Overview
 ![Azure Resource Group](screenshots/azure-resource-group-overview.png)
 
 ---
@@ -68,7 +70,7 @@ YouTube Demo: https://youtu.be/jlgpAMo3re8
 
 ---
 
-## Azure Key Vault Integration
+## Azure Key Vault Secret Management
 ![Key Vault](screenshots/azure-keyvault-secret-management.png)
 
 ---
@@ -83,13 +85,11 @@ YouTube Demo: https://youtu.be/jlgpAMo3re8
 
 ---
 
-# Enterprise Engineering Concepts Applied
+# 📂 Repository Structure
 
-- Metadata-driven orchestration
-- Incremental ingestion framework
-- Lakehouse architecture implementation
-- Modular ETL workflow design
-- Cloud-native scalability
-- Centralized monitoring and governance
-- Secure credential management
-- Reusable pipeline framework
+```text
+adf/           -> Azure Data Factory pipeline JSON files
+synapse/       -> Synapse SQL scripts and transformations
+screenshots/   -> Architecture diagrams and pipeline screenshots
+docs/          -> Supporting documentation
+README.md      -> Project overview and implementation details
