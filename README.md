@@ -10,7 +10,7 @@ The architecture simulates a production-style cybersecurity analytics platform c
 # Azure Cybersecurity Threat Detection Pipeline
 
 ## Project Demo Video
-YouTube Demo: https://www.youtube.com/watch?v=jlgpAMo3re8
+YouTube Demo: https://youtu.be/jlgpAMo3re8
 
 ---
 # Metadata-Driven Pipeline Framework
