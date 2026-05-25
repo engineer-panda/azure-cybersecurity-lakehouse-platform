@@ -2,7 +2,7 @@
 
 # Enterprise Engineering Implementation
 
-This project was built using enterprise-style cloud data engineering principles focused on scalability, automation, monitoring, and secure data processing. The architecture simulates a cybersecurity analytics platform capable of ingesting, transforming, orchestrating, and analyzing large-scale security event data using Microsoft Azure services.
+Built an end-to-end Azure Cybersecurity Threat Detection Pipeline using Azure Data Factory, Synapse Analytics, ADLS Gen2, and SQL. Implemented Bronze, Silver, and Gold data warehouse layers for cybersecurity log ingestion, transformation, curated analytics, and reporting workflows. Designed metadata-driven orchestration, incremental processing, monitoring, and secure cloud-native data engineering architecture.
 
 ---
 # Azure Cybersecurity Threat Detection Pipeline
