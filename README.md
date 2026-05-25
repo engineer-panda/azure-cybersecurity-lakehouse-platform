@@ -2,9 +2,7 @@
 
 # Enterprise Engineering Implementation
 
-The project was designed using enterprise-scale cloud data engineering principles focused on scalability, modularity, automation, maintainability, monitoring, and secure cloud-native processing.
-
-The architecture simulates a production-style cybersecurity analytics platform capable of handling large-scale security event ingestion, transformation, orchestration, and analytical reporting workflows using Microsoft Azure services.
+This project was built using enterprise-style cloud data engineering principles focused on scalability, automation, monitoring, and secure data processing. The architecture simulates a cybersecurity analytics platform capable of ingesting, transforming, orchestrating, and analyzing large-scale security event data using Microsoft Azure services.
 
 ---
 # Azure Cybersecurity Threat Detection Pipeline
