@@ -12,7 +12,7 @@ YouTube Demo: https://youtu.be/jlgpAMo3re8
 
 # Architecture Diagram
 
-![Architecture](screenshots/architecture_001.png)
+![Cybersecurity Log Analytics Platform Architecture](screenshots/architecture_001.png)
 
 ---
 
